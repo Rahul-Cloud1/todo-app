@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input section */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.input-box input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.input-box button {
+  padding: 12px 18px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.input-box button:hover {
+  background: #5a67d8;
+}
+
+/* Todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9ff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.todo-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #2e7d32;
+}
+
+/* Status badge */
+.status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.status.done {
+  background: #e6f4ea;
+  color: #2e7d32;
+}
+
+.status.pending {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+/* Buttons */
+.todo-actions button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.edit-btn {
+  background: #ffb300;
+  color: white;
+}
+
+.delete-btn {
+  background: #e53935;
+  color: white;
+}
